@@ -13,9 +13,13 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Sign in")
+                .padding()
             
             HStack {
-                
+                Text("Input name")
+                    .padding()
+                Text("Open camera")
+                    .padding()
             }
         }
     }
