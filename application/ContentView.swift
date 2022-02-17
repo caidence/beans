@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var showingNameView = false
+    @State var showingNameView = false
+    @State var showingCameraView = false
     
     var body: some View {
         VStack {
@@ -16,10 +17,19 @@ struct ContentView: View {
                 .padding()
             
             HStack {
-                Text("Input name")
-                    .padding()
-                Text("Open camera")
-                    .padding()
+                Button("Input name") {
+                    self.showingNameView.toggle()
+                }
+                .sheet(isPresented: $showingNameView) {
+                    NameView()
+                }
+                
+                Button("Open camera") {
+                    self.showingCameraView.toggle()
+                }
+                .sheet(isPresented: $showingCameraView) {
+                    CameraView()
+                }
             }
         }
     }
