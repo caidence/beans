@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Alamofire
 
 struct ContentView: View {
     @State var showingNameView = false
@@ -30,13 +31,15 @@ struct ContentView: View {
                 .sheet(isPresented: $showingCameraView) {
                     CameraView()
                 }
-            }
-        }
-    }
+            } // End HStack
+        } // End VStack
+    } //End Body
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+        }
     }
 }
