@@ -7,6 +7,9 @@ target 'application' do
 
   # Pods for application
 	pod 'Alamofire'
+	pod 'GoogleAPIClientForREST/Sheets'
+	pod 'GoogleSignIn'
+  pod 'GTMAppAuth'
 
   target 'applicationTests' do
     inherit! :search_paths
