@@ -33,8 +33,14 @@ struct NameView: View {
                 .padding(33)
             
             Spacer()
-        }
-    }
+            
+            let getRequest = ApiCall()
+            Button(action: {getRequest.afGet()
+            }, label: {
+                Text("Submit")
+            })
+        } // End VStack
+    } // End Body
 }
 
 struct NameView_Previews: PreviewProvider {

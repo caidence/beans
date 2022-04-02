@@ -1,4 +1,5 @@
 import SwiftUI
+import Alamofire
 
 
 struct ContentView: View {
@@ -11,6 +12,7 @@ struct ContentView: View {
             
             // Sign in text
             HStack {
+<<<<<<< HEAD
                 Text("Sign in")
                     .padding()
                     .font(.title)
@@ -23,12 +25,15 @@ struct ContentView: View {
                 Spacer()
                 
                 // Input name button
+=======
+>>>>>>> QA
                 Button("Input name") {
                     self.showingNameView.toggle()
                 }
                 .sheet(isPresented: $showingNameView) {
                     NameView()
                 }
+<<<<<<< HEAD
                 .font(.headline)
                 .foregroundColor(.white)
                 .padding()
@@ -37,12 +42,16 @@ struct ContentView: View {
                 
                 
                 // Open camera button
+=======
+                
+>>>>>>> QA
                 Button("Open camera") {
                     self.showingCameraView.toggle()
                 }
                 .sheet(isPresented: $showingCameraView) {
                     CameraView()
                 }
+<<<<<<< HEAD
                 .font(.headline)
                 .foregroundColor(.white)
                 .padding()
@@ -56,11 +65,18 @@ struct ContentView: View {
         }
         .background(Color(red: 75 / 255, green: 75 / 255, blue: 75 / 255))
     }
+=======
+            } // End HStack
+        } // End VStack
+    } //End Body
+>>>>>>> QA
 }
 
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+        }
     }
 }
