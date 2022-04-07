@@ -5,71 +5,25 @@ import Alamofire
 struct ContentView: View {
     @State var showingNameView = false
     @State var showingCameraView = false
+    @State private var selection: String? = nil
     
     var body: some View {
-        VStack {
-            Spacer()
-            
-            // Sign in text
-            HStack {
-<<<<<<< HEAD
-                Text("Sign in")
-                    .padding()
-                    .font(.title)
-                    .foregroundColor(.white)
-            }
-            .padding()
+        NavigationView {
+            VStack {
+                NavigationLink(destination: Text("View A"), tag: "A", selection: $selection) { NameView() }
+                NavigationLink(destination: Text("View B"), tag: "B", selection: $selection) { CameraView() }
 
+                Button("Tap to show A") {
+                    selection = "A"
+                }
 
-            HStack {
-                Spacer()
-                
-                // Input name button
-=======
->>>>>>> QA
-                Button("Input name") {
-                    self.showingNameView.toggle()
+                Button("Tap to show B") {
+                    selection = "B"
                 }
-                .sheet(isPresented: $showingNameView) {
-                    NameView()
-                }
-<<<<<<< HEAD
-                .font(.headline)
-                .foregroundColor(.white)
-                .padding()
-                .background(Color(red: 18 / 255, green: 18 / 255, blue: 18 / 255))
-                .cornerRadius(8)
-                
-                
-                // Open camera button
-=======
-                
->>>>>>> QA
-                Button("Open camera") {
-                    self.showingCameraView.toggle()
-                }
-                .sheet(isPresented: $showingCameraView) {
-                    CameraView()
-                }
-<<<<<<< HEAD
-                .font(.headline)
-                .foregroundColor(.white)
-                .padding()
-                .background(Color(red: 18 / 255, green: 18 / 255, blue: 18 / 255))
-                .cornerRadius(8)
-                
-                Spacer()
             }
-            
-            Spacer()
+            .navigationTitle("Navigation")
         }
-        .background(Color(red: 75 / 255, green: 75 / 255, blue: 75 / 255))
     }
-=======
-            } // End HStack
-        } // End VStack
-    } //End Body
->>>>>>> QA
 }
 
 

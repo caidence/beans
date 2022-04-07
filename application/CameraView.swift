@@ -7,11 +7,13 @@
 
 import SwiftUI
 
+
 struct CameraView: View {
     var body: some View {
         Text("Camera opens")
     }
 }
+
 
 struct CameraView_Previews: PreviewProvider {
     static var previews: some View {

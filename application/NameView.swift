@@ -32,13 +32,14 @@ struct NameView: View {
             )
                 .padding(33)
             
-            Spacer()
-            
             let getRequest = ApiCall()
             Button(action: {getRequest.afGet()
             }, label: {
                 Text("Submit")
             })
+            
+            Spacer()
+
         } // End VStack
     } // End Body
 }
