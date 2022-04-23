@@ -7,11 +7,14 @@
 
 import SwiftUI
 import Firebase
+import CodeScanner
 
 
 struct ContentView: View {
     @State private var firstName: String = ""
     @State private var lastName: String = ""
+    @State private var meeting: String = ""
+    @State private var isShowingScanner = false
     
     func sendData() {
         let udid = UIDevice.current.identifierForVendor!.uuidString
@@ -42,6 +45,13 @@ struct ContentView: View {
             .padding()
             
             VStack {
+                TextField("Meeting: ", text: $meeting)
+                    .padding()
+                    .font(Font.system(size: 15, weight: .medium, design: .serif))
+                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.blue, lineWidth: 1))
+            }
+            .padding()
+            VStack {
                 Button("Sign in", action: sendData)
                     .padding()
                     .background(Color(UIColor.systemIndigo))
@@ -49,8 +59,34 @@ struct ContentView: View {
                     .cornerRadius(8)
             }
             .padding()
+            VStack{
+                Button {
+                    isShowingScanner = true
+                } label: {
+                    Label("Scan", systemImage: "qrcode.viewfinder")
+                    
+                }
+                .sheet(isPresented: $isShowingScanner) {
+                    CodeScannerView(codeTypes: [.qr], simulatedData: "Tim\nNortenSafetyTraining", completion: handleScan)
+                }
+            }
         }
         .padding()
+    }
+    func handleScan(result: Result<ScanResult, ScanError>) {
+        isShowingScanner = false
+
+        switch result {
+        case .success(let result):
+            let details = result.string.components(separatedBy: "\n")
+            guard details.count == 3 else { return }
+            
+            firstName = details[0]
+            lastName = details[1]
+            meeting = details[2]
+        case .failure(let error):
+            print("Scanning failed: \(error.localizedDescription)")
+        }
     }
 }
 
