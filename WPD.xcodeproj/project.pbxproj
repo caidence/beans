@@ -50,14 +50,14 @@
 		B061EF0B74004B3A3FC340B2 /* Pods-beans-beansUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beans-beansUITests.debug.xcconfig"; path = "Target Support Files/Pods-beans-beansUITests/Pods-beans-beansUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BEE693A31E4C541E1108CD7A /* Pods-beans-beansUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beans-beansUITests.release.xcconfig"; path = "Target Support Files/Pods-beans-beansUITests/Pods-beans-beansUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C3534DA456401B3C155DE7FD /* Pods-beansTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beansTests.debug.xcconfig"; path = "Target Support Files/Pods-beansTests/Pods-beansTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F95E99AD27FA233C009EC7ED /* beans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beans.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F95E99AD27FA233C009EC7ED /* WPD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WPD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F95E99B027FA233C009EC7ED /* beansApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beansApp.swift; sourceTree = "<group>"; };
 		F95E99B227FA233C009EC7ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F95E99B427FA233D009EC7ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F95E99B727FA233D009EC7ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F95E99BD27FA233D009EC7ED /* beansTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = beansTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F95E99BD27FA233D009EC7ED /* WPDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WPDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F95E99C127FA233D009EC7ED /* beansTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beansTests.swift; sourceTree = "<group>"; };
-		F95E99C727FA233D009EC7ED /* beansUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = beansUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F95E99C727FA233D009EC7ED /* WPDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WPDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F95E99CB27FA233D009EC7ED /* beansUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beansUITests.swift; sourceTree = "<group>"; };
 		F95E99CD27FA233D009EC7ED /* beansUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beansUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F95E99DA27FA24EC009EC7ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -132,9 +132,9 @@
 		F95E99AE27FA233C009EC7ED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F95E99AD27FA233C009EC7ED /* beans.app */,
-				F95E99BD27FA233D009EC7ED /* beansTests.xctest */,
-				F95E99C727FA233D009EC7ED /* beansUITests.xctest */,
+				F95E99AD27FA233C009EC7ED /* WPD.app */,
+				F95E99BD27FA233D009EC7ED /* WPDTests.xctest */,
+				F95E99C727FA233D009EC7ED /* WPDUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,9 +180,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F95E99AC27FA233C009EC7ED /* beans */ = {
+		F95E99AC27FA233C009EC7ED /* WPD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F95E99D127FA233D009EC7ED /* Build configuration list for PBXNativeTarget "beans" */;
+			buildConfigurationList = F95E99D127FA233D009EC7ED /* Build configuration list for PBXNativeTarget "WPD" */;
 			buildPhases = (
 				5CCAC61507B578E2DDEA4034 /* [CP] Check Pods Manifest.lock */,
 				F95E99A927FA233C009EC7ED /* Sources */,
@@ -194,17 +194,17 @@
 			);
 			dependencies = (
 			);
-			name = beans;
+			name = WPD;
 			packageProductDependencies = (
 				82E1F56528107B7C00FE8784 /* CodeScanner */,
 			);
 			productName = beans;
-			productReference = F95E99AD27FA233C009EC7ED /* beans.app */;
+			productReference = F95E99AD27FA233C009EC7ED /* WPD.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F95E99BC27FA233D009EC7ED /* beansTests */ = {
+		F95E99BC27FA233D009EC7ED /* WPDTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F95E99D427FA233D009EC7ED /* Build configuration list for PBXNativeTarget "beansTests" */;
+			buildConfigurationList = F95E99D427FA233D009EC7ED /* Build configuration list for PBXNativeTarget "WPDTests" */;
 			buildPhases = (
 				DE40AA285E289DD76C301041 /* [CP] Check Pods Manifest.lock */,
 				F95E99B927FA233D009EC7ED /* Sources */,
@@ -216,14 +216,14 @@
 			dependencies = (
 				F95E99BF27FA233D009EC7ED /* PBXTargetDependency */,
 			);
-			name = beansTests;
+			name = WPDTests;
 			productName = beansTests;
-			productReference = F95E99BD27FA233D009EC7ED /* beansTests.xctest */;
+			productReference = F95E99BD27FA233D009EC7ED /* WPDTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F95E99C627FA233D009EC7ED /* beansUITests */ = {
+		F95E99C627FA233D009EC7ED /* WPDUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F95E99D727FA233D009EC7ED /* Build configuration list for PBXNativeTarget "beansUITests" */;
+			buildConfigurationList = F95E99D727FA233D009EC7ED /* Build configuration list for PBXNativeTarget "WPDUITests" */;
 			buildPhases = (
 				ECFEC7A7BCDE4B79623CA62E /* [CP] Check Pods Manifest.lock */,
 				F95E99C327FA233D009EC7ED /* Sources */,
@@ -236,9 +236,9 @@
 			dependencies = (
 				F95E99C927FA233D009EC7ED /* PBXTargetDependency */,
 			);
-			name = beansUITests;
+			name = WPDUITests;
 			productName = beansUITests;
-			productReference = F95E99C727FA233D009EC7ED /* beansUITests.xctest */;
+			productReference = F95E99C727FA233D009EC7ED /* WPDUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -264,7 +264,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F95E99A827FA233C009EC7ED /* Build configuration list for PBXProject "beans" */;
+			buildConfigurationList = F95E99A827FA233C009EC7ED /* Build configuration list for PBXProject "WPD" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -280,9 +280,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F95E99AC27FA233C009EC7ED /* beans */,
-				F95E99BC27FA233D009EC7ED /* beansTests */,
-				F95E99C627FA233D009EC7ED /* beansUITests */,
+				F95E99AC27FA233C009EC7ED /* WPD */,
+				F95E99BC27FA233D009EC7ED /* WPDTests */,
+				F95E99C627FA233D009EC7ED /* WPDUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -452,12 +452,12 @@
 /* Begin PBXTargetDependency section */
 		F95E99BF27FA233D009EC7ED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F95E99AC27FA233C009EC7ED /* beans */;
+			target = F95E99AC27FA233C009EC7ED /* WPD */;
 			targetProxy = F95E99BE27FA233D009EC7ED /* PBXContainerItemProxy */;
 		};
 		F95E99C927FA233D009EC7ED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F95E99AC27FA233C009EC7ED /* beans */;
+			target = F95E99AC27FA233C009EC7ED /* WPD */;
 			targetProxy = F95E99C827FA233D009EC7ED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -662,7 +662,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/beans.app/beans";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WPD.app/WPD";
 			};
 			name = Debug;
 		};
@@ -687,7 +687,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/beans.app/beans";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WPD.app/WPD";
 			};
 			name = Release;
 		};
@@ -740,7 +740,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F95E99A827FA233C009EC7ED /* Build configuration list for PBXProject "beans" */ = {
+		F95E99A827FA233C009EC7ED /* Build configuration list for PBXProject "WPD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F95E99CF27FA233D009EC7ED /* Debug */,
@@ -749,7 +749,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F95E99D127FA233D009EC7ED /* Build configuration list for PBXNativeTarget "beans" */ = {
+		F95E99D127FA233D009EC7ED /* Build configuration list for PBXNativeTarget "WPD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F95E99D227FA233D009EC7ED /* Debug */,
@@ -758,7 +758,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F95E99D427FA233D009EC7ED /* Build configuration list for PBXNativeTarget "beansTests" */ = {
+		F95E99D427FA233D009EC7ED /* Build configuration list for PBXNativeTarget "WPDTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F95E99D527FA233D009EC7ED /* Debug */,
@@ -767,7 +767,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F95E99D727FA233D009EC7ED /* Build configuration list for PBXNativeTarget "beansUITests" */ = {
+		F95E99D727FA233D009EC7ED /* Build configuration list for PBXNativeTarget "WPDUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F95E99D827FA233D009EC7ED /* Debug */,

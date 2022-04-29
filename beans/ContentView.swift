@@ -17,8 +17,6 @@ struct ContentView: View {
     @State private var isShowingScanner = false
     @State private var error = ""
     @State private var isShowingError = false
-    @State private var isEditing = false
-    @State private var isQRError = false
     
     func sendData() {
         let udid = UIDevice.current.identifierForVendor!.uuidString
@@ -37,9 +35,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             VStack {
-                TextField("First Name: ", text: $firstName, onEditingChanged: { (v) in
-                    isEditing = v
-                })
+                TextField("First Name: ", text: $firstName)
                     .padding()
                     .font(Font.system(size: 15, weight: .medium, design: .serif))
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.blue, lineWidth: 1))
@@ -85,10 +81,6 @@ struct ContentView: View {
                 }
                 .sheet(isPresented: $isShowingScanner) {
                     CodeScannerView(codeTypes: [.qr], completion: handleScan)
-                .alert(isPresented: $isShowingError) {
-                                Alert(title: Text("Scan failed: QR code error"), dismissButton:
-                                        .default(Text("OK")))
-                            }
                 }
             }
         }
@@ -103,7 +95,6 @@ struct ContentView: View {
             guard details.count == 1 else { return }
             event = details[0]
         case .failure(let error):
-            isQRError = true
             print("Scanning failed: \(error.localizedDescription)")
         }
     }
