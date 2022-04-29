@@ -21,7 +21,6 @@
 		F95E99DB27FA24EC009EC7ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F95E99DA27FA24EC009EC7ED /* GoogleService-Info.plist */; };
 		F95E99DC27FA24EC009EC7ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F95E99DA27FA24EC009EC7ED /* GoogleService-Info.plist */; };
 		F95E99DD27FA24EC009EC7ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F95E99DA27FA24EC009EC7ED /* GoogleService-Info.plist */; };
-		F988B2CA2800F07400B565C1 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F988B2C92800F07400B565C1 /* EventView.swift */; };
 		F9D39E8127FF9C3500F82055 /* TODO.md in Resources */ = {isa = PBXBuildFile; fileRef = F9D39E8027FF9C3500F82055 /* TODO.md */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +61,6 @@
 		F95E99CB27FA233D009EC7ED /* beansUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beansUITests.swift; sourceTree = "<group>"; };
 		F95E99CD27FA233D009EC7ED /* beansUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beansUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F95E99DA27FA24EC009EC7ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		F988B2C92800F07400B565C1 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		F9D39E8027FF9C3500F82055 /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
 		FE9EC667342DD4DBED109843 /* Pods-beans.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beans.debug.xcconfig"; path = "Target Support Files/Pods-beans/Pods-beans.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,7 +145,6 @@
 				F9D39E8027FF9C3500F82055 /* TODO.md */,
 				F95E99B027FA233C009EC7ED /* beansApp.swift */,
 				F95E99B227FA233C009EC7ED /* ContentView.swift */,
-				F988B2C92800F07400B565C1 /* EventView.swift */,
 				F95E99B427FA233D009EC7ED /* Assets.xcassets */,
 				F95E99DA27FA24EC009EC7ED /* GoogleService-Info.plist */,
 				F95E99B627FA233D009EC7ED /* Preview Content */,
@@ -428,7 +425,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F988B2CA2800F07400B565C1 /* EventView.swift in Sources */,
 				F95E99B327FA233C009EC7ED /* ContentView.swift in Sources */,
 				F95E99B127FA233C009EC7ED /* beansApp.swift in Sources */,
 			);
@@ -521,6 +517,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -576,6 +573,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -592,6 +590,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"beans/Preview Content\"";
+				DEVELOPMENT_TEAM = 9VTMN35X9H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -621,6 +620,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"beans/Preview Content\"";
+				DEVELOPMENT_TEAM = 9VTMN35X9H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
